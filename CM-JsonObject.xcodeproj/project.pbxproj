@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68E92C2D1B85797400A7D66D /* Wind.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E92C2C1B85797400A7D66D /* Wind.m */; };
+		68E92C301B857BB000A7D66D /* Clouds.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E92C2F1B857BB000A7D66D /* Clouds.m */; };
+		68E92C331B85857900A7D66D /* Sys.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E92C321B85857900A7D66D /* Sys.m */; };
 		D19A6B9E1B5A999E00A0C88A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19A6B9D1B5A999E00A0C88A /* main.m */; };
 		D19A6BA11B5A999E00A0C88A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D19A6BA01B5A999E00A0C88A /* AppDelegate.m */; };
 		D19A6BA41B5A999E00A0C88A /* CM_JsonObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D19A6BA21B5A999E00A0C88A /* CM_JsonObject.xcdatamodeld */; };
@@ -56,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68E92C2B1B85797400A7D66D /* Wind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wind.h; sourceTree = "<group>"; };
+		68E92C2C1B85797400A7D66D /* Wind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wind.m; sourceTree = "<group>"; };
+		68E92C2E1B857BB000A7D66D /* Clouds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clouds.h; sourceTree = "<group>"; };
+		68E92C2F1B857BB000A7D66D /* Clouds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clouds.m; sourceTree = "<group>"; };
+		68E92C311B85857900A7D66D /* Sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sys.h; sourceTree = "<group>"; };
+		68E92C321B85857900A7D66D /* Sys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sys.m; sourceTree = "<group>"; };
 		D19A6B981B5A999E00A0C88A /* CM-JsonObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CM-JsonObject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19A6B9C1B5A999E00A0C88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19A6B9D1B5A999E00A0C88A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -239,6 +248,12 @@
 				D19A6C261B5AAE4C00A0C88A /* Weather.m */,
 				D19A6C221B5AAD1600A0C88A /* WeatherDetail.h */,
 				D19A6C231B5AAD1600A0C88A /* WeatherDetail.m */,
+				68E92C2B1B85797400A7D66D /* Wind.h */,
+				68E92C2C1B85797400A7D66D /* Wind.m */,
+				68E92C2E1B857BB000A7D66D /* Clouds.h */,
+				68E92C2F1B857BB000A7D66D /* Clouds.m */,
+				68E92C311B85857900A7D66D /* Sys.h */,
+				68E92C321B85857900A7D66D /* Sys.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -461,6 +476,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19A6C1E1B5A9E7100A0C88A /* Coord.m in Sources */,
+				68E92C331B85857900A7D66D /* Sys.m in Sources */,
+				68E92C301B857BB000A7D66D /* Clouds.m in Sources */,
+				68E92C2D1B85797400A7D66D /* Wind.m in Sources */,
 				D19A6C0C1B5A9A9100A0C88A /* CommonLoggingProvider.m in Sources */,
 				D19A6BA11B5A999E00A0C88A /* AppDelegate.m in Sources */,
 				D19A6BA41B5A999E00A0C88A /* CM_JsonObject.xcdatamodeld in Sources */,
@@ -618,6 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CM-JsonObject/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -628,6 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CM-JsonObject/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -646,6 +666,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "CM-JsonObjectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CM-JsonObject.app/CM-JsonObject";
@@ -661,6 +682,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "CM-JsonObjectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CM-JsonObject.app/CM-JsonObject";
@@ -686,6 +708,7 @@
 				D19A6BC01B5A999E00A0C88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D19A6BC11B5A999E00A0C88A /* Build configuration list for PBXNativeTarget "CM-JsonObjectTests" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +717,7 @@
 				D19A6BC31B5A999E00A0C88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

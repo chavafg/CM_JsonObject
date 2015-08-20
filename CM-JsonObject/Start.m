@@ -45,5 +45,11 @@
     self.lblTempMin.text    = [NSString stringWithFormat:@"%.2f", mWeatherObject.main.temp_min - 273.15];
     self.lblPressure.text   = [NSString stringWithFormat:@"%d", mWeatherObject.main.pressure];
     self.lblHumidity.text   = [NSString stringWithFormat:@"%d", mWeatherObject.main.humidity];
+    self.lblCountry.text    = mWeatherObject.sys.country;
+    self.lblSunrise.text    = [NSString stringWithFormat:@"%ld", mWeatherObject.sys.sunrise];
+    self.lblSunset.text     = [NSString stringWithFormat:@"%ld", mWeatherObject.sys.sunset];
+    self.lblWindSpeed.text  = [NSString stringWithFormat:@"%.2f", mWeatherObject.wind.speed];
+    
+    
 }
 @end

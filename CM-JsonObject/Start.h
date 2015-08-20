@@ -21,6 +21,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblTempMin;
 @property (strong, nonatomic) IBOutlet UILabel *lblPressure;
 @property (strong, nonatomic) IBOutlet UILabel *lblHumidity;
+@property (strong, nonatomic) IBOutlet UILabel *lblCountry;
+@property (strong, nonatomic) IBOutlet UILabel *lblSunrise;
+@property (strong, nonatomic) IBOutlet UILabel *lblSunset;
+@property (strong, nonatomic) IBOutlet UILabel *lblWindSpeed;
 
 //Actions
 - (IBAction)btnGetDataPressed:(id)sender;
